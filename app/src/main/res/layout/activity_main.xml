@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.locationservice.MainActivity">
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="——————仅供娱乐，杜绝商用——————"/>
+    
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/find"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="开启天眼查"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_info_btn"/>
+
+    <Button
+        android:id="@+id/read"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/find"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="读取追踪信息"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_info_btn"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/read"
+        android:id="@+id/rvTrace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"/>
+
+</RelativeLayout>
